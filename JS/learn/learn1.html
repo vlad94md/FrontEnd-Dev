@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <button onclick="getElementById('demo').innerHTML=Date()">The time is?</button>
+
+    <button onclick="displayDate()">The time is? Change itself</button>
+    
+    <button onmouseover="displayDate()">Mouse over time</button>
+     
+    <input onchange="displayDate()" name="inputReg">
+    
+    <p onclick="this.innerHTML='GOOD JOB!'">Click me.</p>
+    <span onmouseover="this.style.color='red'">Mouse over me!</span>
+    
+    <p id="demo"></p>
+
+
+    <script>
+          
+        var years = prompt('How old are you?', 21);
+
+        alert('You are ' + years + ' years old!');
+        
+        var name = prompt("Ваше имя?", "");
+        alert( name );
+        
+        var isAdmin = confirm("Are you admin?");
+
+        if(isAdmin) alert("Password is 123");
+        
+        var company = prompt('Какая компания создала JavaScript?', '');
+
+        (company == 'Netscape') ?
+            alert('Да, верно') : alert('Неправильно');
+
+        function displayDate() {
+            
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>    
+</body>
+</html>
+

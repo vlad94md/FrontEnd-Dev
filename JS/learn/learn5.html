@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+
+<body>
+
+
+    <script>
+        //                var userName = 'Вася';
+        //        
+        //                function showMessage() {
+        //                    userName = 'Петя'; // (1) присвоение во внешнюю переменную
+        //        
+        //                    var message = 'Привет, я ' + userName;
+        //                    alert(message);
+        //                }
+        //        
+        //                showMessage();
+        //        
+        //                alert(userName); // Петя, значение внешней переменной изменено функцией
+        //        
+        //        
+        //                function showMessage2(from, text) { // параметры from, text
+        //        
+        //                    from = "** " + from + " **"; // здесь может быть сложный код оформления
+        //        
+        //                    alert(from + ': ' + text);
+        //                }
+        //        
+        //                showMessage2('Маша', 'Привет!');
+        //                showMessage2('Маша', 'Как дела?');
+        //        
+        //        var from = "Маша";
+        //
+        //        function showMessage(from, text) {
+        //            from = '**' + from + '**'; // меняем локальную переменную from
+        //            alert(from + ': ' + text);
+        //        }
+        //
+        //
+        //
+        //        showMessage(from, "Привет");
+        //        alert(from);
+
+
+                var testVal = new Number(33);
+                var testObj = {
+                    name: "olaf"
+                };
+//                var testArr = ["firstStr", "secondStr"];
+        
+                function testFunc(val, obj) {
+                    val = new Number(11);
+                    obj.name = "brolaf";
+                }
+                
+                console.log(testVal);
+        
+                testFunc(testVal, testObj);
+        
+                console.log(testVal);
+//                alert(testVal);
+//                alert(testObj.name);
+//                alert(testArr[0]);
+        
+                console.log("types are " + typeof (testVal) + " " + typeof (testObj) + " " + typeof (testArr) + " " + typeof (testFunc));
+
+
+//        function myFunction(x, y) {
+//            if (y === undefined) {
+//                y = 0;
+//            }
+//            alert(y);
+//        }
+//
+//        myFunction(1, null);
+//
+//
+//        var obj = {
+//            att1: 1,
+//            att2: 2
+//        };
+//        obj.att3 = 3;
+//
+//        alert(obj["att3"]);
+    </script>
+
+</body>
+
+</html>
