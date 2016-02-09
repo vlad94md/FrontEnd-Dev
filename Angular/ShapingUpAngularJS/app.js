@@ -1,25 +1,8 @@
 (function () {
-    var app = angular.module('store', []);
+    var app = angular.module('store', ['store-products']);
 
     app.controller('StoreController', function () {
         this.products = gems;
-    });
-
-    app.controller('TabController', function () {
-        this.tab = 1;
-        this.setTab = function (number) {
-            this.tab = number;
-        };
-        this.isSet = function (number) {
-            return this.tab === number;
-        };
-    });
-
-    app.controller('GalleryController', function () {
-        this.current = 0;
-        this.setCurrent = function (newGallery) {
-            this.current = newGallery || 0;
-        };
     });
 
 
@@ -30,13 +13,6 @@
             product.reviews.push(this.rev);
 
             this.rev = {};
-        };
-    });
-
-    app.directive('productTitle', function () {
-        return {
-            restrict: 'E',
-            templateUrl: 'productTitle.html'
         };
     });
 
@@ -53,6 +29,7 @@
             templateUrl: 'productReviews.html'
         };
     });
+
 
     var gems = [
         {
@@ -100,8 +77,30 @@
                 "p2.png",
                 "p3.png"
             ]
+        },
+                {
+            name: "Octagonal",
+            price: 11.0,
+            descr: "This gem has 8 sides",
+            reviews: [{
+                stars: 5,
+                body: "I love this gem!",
+                author: "joe@example.org",
+                createdOn: 1397490980837
+            }, {
+                stars: 1,
+                body: "This gem sucks.",
+                author: "tim@example.org",
+                createdOn: 1397490980837
+            }],
+            canPurchase: true,
+            soldOut: false,
+            images: [
+                "p1.png",
+                "p2.png",
+                "p3.png"
+            ]
         }
     ];
-
 
 })();
