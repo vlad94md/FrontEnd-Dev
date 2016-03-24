@@ -24,6 +24,7 @@ describe("pow", function () {
         before(function () {
             alert("Начало тестов");
         });
+        it ("something", function () {assert.equal(true,true)})
         after(function () {
             alert("Конец тестов");
         });
