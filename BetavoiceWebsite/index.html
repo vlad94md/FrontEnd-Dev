@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/png">
+    <title>Betavoice Website</title>
+    <meta name="description" content="Betavoice Website">
+    <meta name="author" content="Guleaev Vladislav">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div id="background"></div>
+    <nav class="navbar navbar-default navbar-fixed-top" style="display: none">
+        <div class="container">
+            <div class="row">
+                <div class="header">
+                    <a class="fa fa-headphones bar-button" id="music-button" href="#" title="www.hardstyle.com/betavoice"></a>
+                    <a class="fa fa-facebook bar-button" href="http://www.facebook.com/betavoice" target="_blank" title="www.facebook.com/betavoice"></a>
+                    <a class="fa fa-youtube bar-button" href="http://www.youtube.com/betavoicemedia" target="_blank" title="www.youtube.com/betavoicemedia"></a>
+                    <a class="fa fa-soundcloud bar-button" href="http://www.soundcloud.com/betavoice" target="_blank" title="www.soundcloud.com/betavoice"></a>
+                    <a class="fa fa-instagram bar-button" href="https://www.instagram.com/betavoice" target="_blank" title="www.instagram.com/betavoice"></a>
+                    <a class="fa fa-twitter bar-button" href="http://www.twitter.com/betavoice" target="_blank" title="www.twitter.com/betavoice"></a>
+                    <a class="fa fa-vk bar-button" href="http://vk.com/betavoicemedia" target="_blank" title="www.vk.com/betavoicemedia"></a> <a class="bar-text" id="contact-button">CONTACT</a> </div>
+            </div>
+        </div>
+    </nav>
+    <div id="contact-panel" class="visagold" style="display: none">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="text-center"> CONTACT
+                    <br/> info@betavoice.ru
+                    <br/>
+                    <br/> MANAGEMENT, BOOKINGS, PRESS & LICENSING:
+                    <br/> info@betavoice.ru </div>
+            </div>
+        </div>
+    </div>
+    <div id="music-panel" class="visagold" style="display: none">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="text-center"> BETAVOICE TRACKS ON:
+                    <br/> <a href="https://www.hardstyle.com/betavoice" target="_blank">HARDSTYLE.COM </a>
+                    <br/> <a href="https://www.trackitdown.net/search/keyword?q=Betavoice" target="_blank">TRACKITDOWN</a>
+                    <br/> <a href="https://itunes.apple.com/nl/artist/betavoice/id554897450?l" target="_blank">ITUNES</a>
+                    <br/> <a href="http://www.junodownload.com/artists/Betavoice/releases/" target="_blank">JUNODOWNLOAD</a>
+                    <br/> <a href="https://www.beatport.com/artist/betavoice/286867" target="_blank">BEATPORT</a>
+                    <br/> <a href="https://play.google.com/store/music/artist/Betavoice?id=Awzbwqghryrtbj5qv2r65cm7yjm" target="_blank">GOOGLE PLAY</a> </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".navbar").fadeIn("slow");
+            $("#music-button").click(function () {
+                $(".visagold").fadeOut("fast");
+                $("#music-panel").fadeToggle("slow");
+            });
+            $("#contact-button").click(function () {
+                $(".visagold").fadeOut("fast");
+                $("#contact-panel").fadeToggle("slow");
+            });
+        })
+    </script>
+    <!-- Thanks for watching source code :) Website was made by Vladislav Guleaev -->
+</body>
+
+</html>
